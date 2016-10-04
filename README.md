@@ -3,10 +3,10 @@
 
 # seneca-kue
 
-A plugin that allows you to create and use queues, wrapped around the [kue][https://github.com/Automattic/kue] library
+A plugin that allows you to create and use queues, wrapped around the [kue](https://github.com/Automattic/kue) library
 
 If you're using this module, and need help, you can:
-- Post a [github issue][]
+- Post a [GitHub issue][]
 - Complain to @Wardormeur
 
 If you are new to Seneca in general, please take a look at [senecajs.org][]. We have everything from
@@ -63,7 +63,7 @@ s.use('kue-queue', {
 - role, default: 'kue-queue'. This is the role to be used for start, stop and enqueue commands, you can change it in case of a conflict with other action patterns or if you want to register two different queues.
 
 It is possible to pass additional options when creating a job or when running the worker, like delaying or repository
-Refer to the examples for more, or to [kue's documentation][https://github.com/Automattic/kue] as the library's goal is to be a wrapper for seneca
+Refer to the examples for more, or to [kue's documentation](https://github.com/Automattic/kue) as the library's goal is to be a wrapper for seneca
 
 
 ## License
@@ -74,5 +74,5 @@ Copyright Matteo Collina and Senecajs.org contributors, 2015-2016, Licensed unde
 [Senecajs org]: https://github.com/senecajs/
 [senecajs.org]: http://senecajs.org/
 [Seneca.js]: https://www.npmjs.com/package/seneca
-[github issue]: https://github.com/senecajs/seneca-kue/issues
+[GitHub issue]: https://github.com/senecajs/seneca-kue/issues
 [@senecajs]: http://twitter.com/senecajs
