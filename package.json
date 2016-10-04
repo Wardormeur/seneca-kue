@@ -1,9 +1,10 @@
 {
-  "name": "seneca-queue",
-  "version": "0.3.0",
-  "description": "A multi-transport job queue for Seneca",
-  "author": "Matteo Collina <hello@matteocollina.com>",
+  "name": "seneca-kue",
+  "version": "0.1.0",
+  "description": "A outrageously stolen redis-queuing wrapper for Senecajs",
+  "author": "Wardormeur",
   "contributors": [
+    "Matteo Collina <hello@matteocollina.com>",
     "Paolo Chiodi (https://github.com/paolochiodi)"
   ],
   "license": "MIT",
@@ -20,16 +21,16 @@
     "task",
     "async"
   ],
-  "homepage": "https://github.com/senecajs-labs/seneca-queue",
+  "homepage": "https://github.com/wardormeur/seneca-kue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/senecajs-labs/seneca-queue.git"
+    "url": "https://github.com/wardormeur/seneca-kue.git"
   },
   "bugs": {
-    "url": "https://github.com/senecajs-labs/seneca-queue/issues"
+    "url": "https://github.com/wardormeur/seneca-kue/issues"
   },
   "dependencies": {
-    "async": "^1.5.0",
+    "kue": "^0.11.1",
     "lodash": "^3.2.0"
   },
   "devDependencies": {
@@ -39,6 +40,6 @@
     "eslint-plugin-hapi": "2.x.x",
     "eslint-plugin-standard": "1.x.x",
     "lab": "^6.2.0",
-    "seneca": "plugin"
+    "seneca": "1.4"
   }
 }
