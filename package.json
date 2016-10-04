@@ -19,7 +19,8 @@
     "job",
     "queue",
     "task",
-    "async"
+    "async",
+    "kue"
   ],
   "homepage": "https://github.com/wardormeur/seneca-kue",
   "repository": {
