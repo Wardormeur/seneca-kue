@@ -18,8 +18,10 @@ console.log('worked if you see 3 OK ; 3-1-2')
 // Config is optional but allows you to specify specific params for connection
 // https://github.com/Automattic/kue#redis-connection-settings
 s.act({ role: 'kue-queue', cmd: 'start', config: {
-  jobEvents: false,
-
+  redis: {
+    port: 6379,
+    host: '192.168.0.101'
+  }
 }})
 s.act({ role: 'kue-queue', cmd: 'work', name: 'myQQ'});
 s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task }, function(err, jobId){
@@ -27,7 +29,6 @@ s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task }, function(e
 })
 s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task2,
   params: {
-    // priority: 'high',
     // attempts: 3,
     // backoff: {delay: 60*1000, type:'fixed'},
     // ttl: 42,
@@ -35,8 +36,4 @@ s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task2,
     // concurrency: 0
   }
 });
-s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task3,
-  params: {
-    priority: 'high',
-  }
- })
+s.act({ role: 'kue-queue', cmd: 'enqueue', name: 'myQQ', msg: task3 })
