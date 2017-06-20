@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "./lib/queue.js",
   "scripts": {
-    "test": "lab test/*.test.js -r console -v -L -m 3000 -c -t 90",
+    "test": "lab test/*.test.js -r console -v -L -m 5000 -c -t 90",
     "coverage": "lab -s test/*.test.js -r lcov | coveralls",
     "lint": "lab -dL"
   },
@@ -31,8 +31,9 @@
     "url": "https://github.com/wardormeur/seneca-kue/issues"
   },
   "dependencies": {
-    "kue": "^0.11.1",
-    "lodash": "^3.2.0"
+    "kue": "^0.11.6",
+    "lodash": "^3.2.0",
+    "async": "^2.0.1"
   },
   "devDependencies": {
     "async": "^2.0.1",
