@@ -14,6 +14,8 @@ tutorials to sample apps to help get you up and running quickly.
 
 This is not an official plugin maintained by the seneca team, use at your own risks :)
 
+BEWARE : by a limitation of Kue itself, there cannot be more than one Kue per process.
+
 ## Install
 To install, simply use npm. Remember you will need to install [Seneca.js][] if you haven't already.
 
